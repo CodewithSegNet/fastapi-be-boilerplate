@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Message Sent Successfully{% endblock %}
+
+{% block content %}
+<table role="presentation" width="100%" style="padding: 1rem 2rem;">
+  <tr>
+      <td>
+        <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div style="display: inline-block; height: 130px; width: 130px; overflow: hidden; background-size: cover;">
+                <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Fmessage-sent.png?alt=media&token=d20349a4-e67f-4f36-af2b-8df46d2ecdfc" alt="image" style="height: 100%; width: 100%;">
+            </div>
+            <h1 style="font-size: 1.5rem; color: #0A0A0A; font-weight: 600;">Contact Message Sent Successfully</h1>
+        </div>
+
+        <div>
+            <p style="color: #111; font-size: 1.125rem; font-weight: 600;">Hi, {{message.name}}</p>
+            <p style="color: rgba(17, 17, 17, 0.9); font-weight: 400;">Your contact message has been sent successfully and we will take a look into it as soon as possible.</p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <p style="color: #111; font-size: 0.875rem; font-weight: 500;">Thank you for choosing Tifi</p>
+        </div>
+
+        <div style="margin-top: 2rem;">
+            <p>Regards,</p>
+            <p>The TiFi Team</p>
+        </div>
+      </td>
+  </tr>
+</table>
+{% endblock %}

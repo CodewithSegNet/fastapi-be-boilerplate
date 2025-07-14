@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+
+      <!-- Header -->
+      <table role="presentation" width="100%" style="background-color: #FDEADC; height: 7.625rem; text-align: center;">
+          <tr>
+              <td style="text-align: center;">
+                  <div style="display: inline-block; height: 80px; width: 100px; overflow: hidden; background-size: cover;">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Fnew%20tifi%20logo.png?alt=media&token=039e8410-09a0-42dd-8b84-1fb212098200" alt="Logo" style="height: 100%; width: 100%;">
+                  </div>
+              </td>
+          </tr>
+      </table>
+
+      {% block content %} {% endblock %}
+
+      <!-- Footer -->
+      <table role="presentation" width="100%" style="background-color: #F3EFEE; padding: 1rem 2rem;">
+          <tr>
+              <td style="text-align: center;">
+                <div style="display: inline-block;">
+                    <a href="https://x.com/Tifi_tv" style="margin-right: 10px;">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Fxtwitter.png?alt=media&token=503d0043-7ed0-4d13-b495-327fb5531241" alt="xtwitter" style="height: 24px; width: 24px;">
+                    </a>
+                    <a href="#" style="margin-right: 10px;">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Finstagram.png?alt=media&token=325f3734-92d7-454d-bd34-cb9810e09001" alt="instagram" style="height: 24px; width: 24px;">
+                    </a>
+                    <a href="https://www.linkedin.com/company/tifi-tv/" style="margin-right: 10px;">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flinkedin.png?alt=media&token=81bfba3b-9a35-4496-8b25-649b0d4062bb" alt="linkedin" style="height: 24px; width: 24px;">
+                    </a>
+                </div>
+                
+                <div style="text-align: justify;">
+                    <p style="color: #5B5B5D; font-size: 0.875rem; font-weight: 400; margin: 1.5rem 0">Thank you for choosing Tifi.tv. Need help? <a href="https://tifi.tv/contact" style="color: #111; font-weight: 600; text-decoration: underline;">Contact our customer support</a></p>
+                    <hr style="border: 1px dashed #969696; margin-bottom: 1.5rem;">
+                    <p style="color: #5B5B5D; font-size: 0.875rem; font-weight: 400;">You are receiving this email because you signed up at Tifi.tv. Want to change how you receive these emails? <a href="{{unsubscribe_link}}" style="color: #111; font-weight: 600; text-decoration: none;">Update your preferences</a> or <a href="{{unsubscribe_link}}" style="color: #111; font-weight: 600; text-decoration: none;">unsubscribe from this list.</a></p>
+                </div>
+              </td>
+          </tr>
+      </table>
+  </body>
+</html>
+

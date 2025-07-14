@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Project Creation Failed{% endblock %}
+
+{% block content %}
+<table role="presentation" width="100%" style="padding: 1rem 2rem;">
+  <tr>
+      <td>
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+            <div style="display: inline-block; height: 130px; width: 130px; overflow: hidden; background-size: cover;">
+                <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Ferror.png?alt=media&token=19edd0a1-d83e-4dcd-9f1c-36b2569c2377" alt="image" style="height: 100%; width: 100%;">
+            </div>
+            <h1 style="font-size: 1.5rem; color: #0A0A0A; font-weight: 600;">Job Failed</h1>
+          </div>
+
+          <div>
+              <p style="color: #111; font-size: 1.125rem; font-weight: 600;">Hi {{user.first_name}} {{user.last_name}},</p>
+              <p style="color: rgba(17, 17, 17, 0.9); font-weight: 400;">Your {{job.tool_name}} job has failed. Please try again as soon as you can.</p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+              <p style="color: #111; font-size: 0.875rem; font-weight: 500;">Thank you for choosing TiFi</p>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <p>Regards,</p>
+            <p>The TiFi Team</p>
+          </div>
+      </td>
+  </tr>
+</table>
+{% endblock %}

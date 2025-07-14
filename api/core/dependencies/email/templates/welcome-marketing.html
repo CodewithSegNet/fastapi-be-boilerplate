@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+<table role="presentation" width="100%" style="padding: 1rem 2rem;">
+  <tr>
+      <td>
+          <div style="text-align: center; margin-bottom: 1.5rem;">
+              <div style="display: inline-block; height: 370px; width: 330px; overflow: hidden; background-size: cover;">
+                  <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Fwelcome-marketing.png?alt=media&token=0d975c44-baa2-43bb-8757-2586859e2b82" alt="image" style="height: 100%; width: 100%;">
+              </div>
+              <h1 style="font-size: 1.5rem; color: #0A0A0A; font-weight: 600;">Meet Tifi: Your All-in-one Content Creation Tool!</h1>
+          </div>
+
+          <div>
+              <p style="color: #111; font-size: 1.125rem; font-weight: 600;">Hi {{user.first_name}} {{user.last_name}},</p>
+              <p style="color: rgba(17, 17, 17, 0.9); font-weight: 400;">We're thrilled to introduce you to Tifi, the ultimate tool designed to elevate your content creation journey. With Tifi, you are covered every step of the way.</p>
+          </div>
+
+          <div style="margin-bottom: 1.75rem;">
+              <h3 style="color: #0A0A0A; font-weight: 600;">Here's what we have to offer:</h3>
+              <div style="margin-bottom: 1.25rem;">
+                <ul style="list-style: none; padding-left: 0;">
+                  <li style="margin-bottom: 1rem;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+                    <b>Script-to-Video Generator:</b> Transform your written content into engaging videos with animations and visuals in minutes.
+                  </li>
+                  <li style="margin-bottom: 1rem;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+                    <b>Talking Avatar:</b> Enhance your video content with Animated Avatars using our all-in-one tool for better engagement.
+                  </li>
+                  <li style="margin-bottom: 1rem;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+                    <b>YouTube Summarizer:</b> Easily transcribe YouTube videos into text for subtitles, blog posts, or content summaries.
+                  </li>
+                  <li style="margin-bottom: 1rem;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+                    <b>PDF Summarizer:</b> Simplify dense PDFs into brief summaries. Quickly understand the main ideas of reports and articles.
+                  </li>
+                  <li style="margin-bottom: 1rem;">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/python-storage-d1e10.appspot.com/o/tifi%2Flist-icon.png?alt=media&token=86078223-3094-4d4a-a14e-c79ee72243c2" alt="icon" style="height: 20px; width: 20px; margin-right: 10px; vertical-align: middle;">
+                    <b>Podcast Summarizer:</b> Convert your podcast to text with just a few clicks using our - AI Podcast Summarizer.
+                  </li>
+                </ul>
+              </div>
+          </div>
+
+          <a href="{{cta_link}}" style="display: block; width: fit-content; padding: 0.5rem 2.5rem; background-color: #F97316; color: white; text-decoration: none; border-radius: 0.5rem; margin: 0 auto; text-align: center;">
+              Learn more about us
+          </a>
+
+          <div style="margin-top: 2rem;">
+            <p>Regards,</p>
+            <p>The TiFi Team</p>
+          </div>
+      </td>
+  </tr>
+</table>
+{% endblock %}
